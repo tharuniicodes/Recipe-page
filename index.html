@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Cake Recipe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="recipe-card">
+        <header class="recipe-header">
+            <h1 class="recipe-title">Delicious Chocolate Cake</h1>
+            <img src="images/choco.jpg" alt="A delicious chocolate cake" class="recipe-image">
+        </header>
+
+        <section class="recipe-meta">
+            <p><strong>Preparation Time:</strong> <span id="prep-time">45 minutes</span></p>
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <p><strong>Serving Size:</strong> 8-10 people</p>
+        </section>
+
+        <section class="recipe-ingredients">
+            <h2>Ingredients</h2>
+            <button id="toggleIngredients" class="toggle-button">Show Ingredients</button>
+            <ul class="ingredients-list hidden">
+                <li data-ingredient="flour">2 cups All-purpose flour</li>
+                <li data-ingredient="sugar">2 cups Granulated sugar</li>
+                <li data-ingredient="cocoa">3/4 cup Unsweetened cocoa powder</li>
+                <li data-ingredient="baking-soda">2 tsp Baking soda</li>
+                <li data-ingredient="baking-powder">1 tsp Baking powder</li>
+                <li data-ingredient="salt">1 tsp Salt</li>
+                <li data-ingredient="milk">1 cup Buttermilk</li>
+                <li data-ingredient="oil">1/2 cup Vegetable oil</li>
+                <li data-ingredient="eggs">2 large Eggs</li>
+                <li data-ingredient="vanilla">1 tsp Vanilla extract</li>
+                <li data-ingredient="hot-water">1 cup Hot water</li>
+            </ul>
+        </section>
+
+        <section class="recipe-instructions">
+            <h2>Instructions</h2>
+            <button id="startCooking" class="action-button">Start Cooking</button>
+            <ol class="instructions-list">
+                <li id="step1">Preheat oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.</li>
+                <li id="step2">In a large bowl, combine flour, sugar, cocoa, baking soda, baking powder, and salt.</li>
+                <li id="step3">Add buttermilk, oil, eggs, and vanilla to the dry ingredients; beat on medium speed for 2 minutes.</li>
+                <li id="step4">Stir in hot water until combined (batter will be thin).</li>
+                <li id="step5">Pour evenly into the prepared pans.</li>
+                <li id="step6">Bake for 30-35 minutes, or until a wooden skewer inserted into the center comes out clean.</li>
+                <li id="step7">Cool in the pans for 10 minutes before inverting onto a wire rack to cool completely.</li>
+                <li id="step8">Frost as desired (e.g., with chocolate buttercream).</li>
+            </ol>
+            <button id="nextStep" class="action-button hidden">Next Step</button>
+            <button id="resetCooking" class="action-button hidden">Reset</button>
+            <button id="printRecipeButton" class="action-button">Print Recipe</button> </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
